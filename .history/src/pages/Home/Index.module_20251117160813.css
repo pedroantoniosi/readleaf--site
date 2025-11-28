@@ -1,0 +1,20 @@
+.homeContainer {
+    min-height: 95svh;
+    background-image: url("../../assets/banner.png");
+
+    & .homeTitle {
+        max-width: 760px;
+        padding: 2rem;
+        font-size: 4.5rem;
+        color: #DF430F;
+        text-transform: capitalize;
+    }
+
+    & .homeText {
+        max-width: 760px;
+        padding: 2rem;
+        font-size: 4.5rem;
+        color: #DF430F;
+        text-transform: capitalize;
+    }
+}

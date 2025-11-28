@@ -1,0 +1,16 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #fff;
+    color: #DF430F;
+    font-weight: bold;
+
+    & .navLink {
+        background-color: red;
+    }
+
+    & .buttonRegister {
+        border: 2px solid #DF430F;
+    }
+}

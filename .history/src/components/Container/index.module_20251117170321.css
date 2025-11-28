@@ -1,0 +1,25 @@
+@import "../../index.css";
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    color: var(--primaryColor);
+    font-weight: 500;
+
+    & .navLink {
+        color: var(--primaryColor);
+    }
+
+    & .buttonRegister {
+        border: 2px solid var(--primaryColor);
+        color: var(--primaryColor);
+    }
+
+    & .buttonLogin {
+        background-color: var(--primaryColor);
+        color: var(--light);
+    }
+}

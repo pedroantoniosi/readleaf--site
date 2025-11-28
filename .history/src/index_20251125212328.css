@@ -1,0 +1,26 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--light);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --primaryColor: #DF430F;
+  --light: #fff;
+  --dark: #000;
+}
+
+:root[data-theme="dark"] {
+  --light: #080903;
+  --dark: #fff;
+
+  & homeContainer {
+    & .bannerBackground {
+      background-image: url("./assets/banner-dark.png");
+      min-height: 20svh;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../index.css";
+
+.template {
+    display: grid;
+
+    & .templateTitle {
+        color: var();
+    }
+
+    & .templateContente {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}

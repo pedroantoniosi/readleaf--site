@@ -1,0 +1,30 @@
+@import "../../index.css";
+
+.homeContainer {
+    min-height: 95svh;
+    background-image: url("../../assets/banner.png");
+
+    & .homeCaption {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+        color: var(--btnColor);
+    }
+
+    & .homeTitle {
+        max-width: 760px;
+        font-size: 4.5rem;
+        text-transform: capitalize;
+    }
+
+    & .homeText {
+        max-width: 760px;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    & .homeButton {
+        background-color: var(--btnColor);
+    }
+}

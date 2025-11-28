@@ -1,0 +1,172 @@
+@import "../../index.css";
+
+
+/* Default Styles */
+.sectionHeader {
+    margin: 2rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    width: 100%;
+    align-items: stretch;
+}
+
+.sectionHeader .sectionTitle {
+    font-size: 3rem;
+    font-weight: 600;
+
+}
+
+.sectionHeader .sectionLine {
+    position: relative;
+    flex: 1;
+
+
+    &::after {
+        position: absolute;
+        content: ' ';
+        width: 100%;
+        height: .5rem;
+        background-color: var(--primaryColor);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+/* Home Styles */
+.heroContainer {
+    position: relative;
+    display: grid;
+    height: 100svh;
+
+    & img {
+        z-index: -1;
+    }
+
+    & .heroBanner {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    & .heroContent {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        & .bbb {
+            padding: 1rem;
+            width: 100%;
+            background-color: aquamarine;
+            color: red;
+        }
+
+        & .ccc {
+            padding: 1rem;
+            max-height: 70%;
+            height: 100%;
+            overflow: hidden;
+            margin-top: auto;
+            background-color: red;
+        }
+    }
+}
+
+.tourContent {
+
+    & .cardTour {
+        position: relative;
+        padding: 1rem;
+        aspect-ratio: 1/1;
+        border-radius: 1rem;
+    }
+
+    & .cardTour:nth-child(odd) {
+        background: #EA5C06;
+    }
+
+    & .cardTour:nth-child(even) {
+        background: #5c5c5c;
+    }
+}
+
+
+& .card {
+    padding: 1rem;
+    border: 4px solid var(--primaryColor);
+    border-radius: 1rem;
+}
+
+
+
+
+.packagesContainer {
+    & .card {
+        min-height: 600px;
+    }
+}
+
+
+
+
+@media (min-width: 1024px) {
+    .heroContainer {
+        position: relative;
+        display: grid;
+        height: 90svh;
+
+        & .heroBanner {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            bottom: 0;
+        }
+
+        & .heroContent {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 6fr 12fr;
+            background-color: red;
+
+            & .bbb {
+                width: 100%;
+                background-color: gold;
+            }
+
+            & .ccc {
+                max-height: 70%;
+                height: 100%;
+                overflow: hidden;
+                margin-top: auto;
+            }
+        }
+    }
+
+    .tourContent {
+        padding: 4rem;
+
+
+        & .cardTour {
+            position: relative;
+            padding: 1rem;
+            aspect-ratio: 1/1;
+            border-radius: 1rem;
+        }
+
+        & .cardTour:nth-child(odd) {
+            background: #EA5C06;
+            transform: rotate(10deg);
+        }
+
+        & .cardTour:nth-child(even) {
+            background: #5c5c5c;
+            transform: rotate(-10deg) translateY(30px);
+        }
+    }
+}

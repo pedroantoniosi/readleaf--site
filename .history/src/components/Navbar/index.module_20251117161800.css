@@ -1,0 +1,19 @@
+:root {
+    --btnColor: #DF430F;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #fff;
+    color: #DF430F;
+    font-weight: bold;
+
+
+
+    & .buttonRegister {
+        border: 2px solid #DF430F;
+        color: #fff;
+    }
+}

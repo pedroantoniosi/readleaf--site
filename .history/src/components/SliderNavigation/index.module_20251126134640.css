@@ -1,0 +1,13 @@
+.mySwiper {
+    width: 100%;
+
+}
+
+.swiperSlider {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

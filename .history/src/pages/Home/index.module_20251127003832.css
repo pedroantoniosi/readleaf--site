@@ -1,0 +1,118 @@
+@import "../../index.css";
+
+.sectionTitle {
+    padding: 3rem 0 2rem 0rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.homeContainer {
+
+    & .bannerBackground {
+        background-image: url("../../assets/banner.png");
+        min-height: 90svh;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        background-size: cover;
+    }
+
+    & .homeCaption {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+        color: var(--primaryColor);
+    }
+
+    & .homeTitle {
+        max-width: 760px;
+        font-size: clamp(2rem, 5vw, 4.5rem);
+        text-transform: capitalize;
+    }
+
+    & .homeText {
+        max-width: 760px;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    & .homeButton {
+        background-color: var(--primaryColor);
+    }
+}
+
+
+& .card {
+    padding: 1rem;
+    background-color: var(--primaryColor);
+    border-radius: 1rem;
+}
+
+.heroContainer {
+    position: relative;
+    display: grid;
+    height: 90svh;
+
+    & .heroBanner {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+    }
+
+    & .heroContent {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 6fr 12fr;
+        background-color: red;
+
+        & .bbb {
+            width: 100%;
+            background-color: gold;
+        }
+
+        & .ccc {
+            max-height: 70%;
+            height: 100%;
+            overflow: hidden;
+            margin-top: auto;
+        }
+    }
+}
+
+
+.tourContent {
+    padding: 4rem;
+
+    & .cardTour {
+        position: relative;
+        padding: 1rem;
+        aspect-ratio: 1/1;
+        border-radius: 1rem;
+    }
+
+    & .cardTour:nth-child(odd) {
+        background: #EA5C06;
+        transform: rotate(10deg);
+    }
+
+    & .cardTour:nth-child(even) {
+        background: #5c5c5c;
+        transform: rotate(-10deg) translateY(30px);
+    }
+}
+
+.packagesContainer {
+    & .card {
+        min-height: 600px;
+    }
+}
+
+.tourContainer {
+    & .card {
+        background-color: red;
+        height: 600px;
+        aspect-ratio: 1/1;
+    }
+}

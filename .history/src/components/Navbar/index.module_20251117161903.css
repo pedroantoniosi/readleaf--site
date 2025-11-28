@@ -1,0 +1,26 @@
+:root {
+    --btnColor: #DF430F;
+    --light: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    color: var(--btnColor);
+    font-weight: bold;
+
+
+
+    & .buttonRegister {
+        border: 2px solid var(--btnColor);
+        color: var(--btnColor);
+    }
+
+    & .buttonLogin {
+        background-color: var(--btnColor);
+        color: var(--light);
+    }
+}

@@ -1,0 +1,21 @@
+@import "../../index.css";
+
+.template {
+    display: grid;
+
+    & .templateTitle {
+        color: var(--primaryColor);
+        font-size: 3rem;
+        text-transform: capitalize;
+    }
+
+    & .templateContent {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows: 600px;
+
+        & .card {
+            background-color: red;
+        }
+    }
+}

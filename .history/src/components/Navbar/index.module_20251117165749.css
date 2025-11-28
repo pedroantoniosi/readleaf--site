@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    color: var(--btnColor);
+    font-weight: 500;
+
+    & .navLink {
+        background-color: red;
+    }
+
+    & .buttonRegister {
+        border: 2px solid var(--btnColor);
+        color: var(--btnColor);
+    }
+
+    & .buttonLogin {
+        background-color: var(--btnColor);
+        color: var(--light);
+    }
+}

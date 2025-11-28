@@ -1,0 +1,11 @@
+.homeContainer {
+    min-height: 95svh;
+    background-image: url("../../assets/banner.png");
+
+    & .homeTitle {
+        max-width: 760px;
+        padding: 4rem;
+        font-size: 4.5rem;
+        color: #DF430F;
+    }
+}

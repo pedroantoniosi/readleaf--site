@@ -1,0 +1,8 @@
+@import "../../index.css";
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1660px;
+    background-color: red;
+}

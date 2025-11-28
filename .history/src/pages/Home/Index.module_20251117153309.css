@@ -1,0 +1,5 @@
+.homeContainer {
+    background-color: red;
+    min-height: 100svh;
+    background-image: url("../../assets/banner.png");
+}
